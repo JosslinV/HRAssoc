@@ -1,0 +1,16 @@
+|Couche			|Objectif										|
+|---------------|-----------------------------------------------|
+|				|												|
+|controller		|Réceptionner la requête et fournir la réponse	| 
+|				|												|
+|service		|Exécuter les traitements métiers				|
+|				|												|
+|repository		|Communiquer avec la source de données			|
+|				|												|
+|model			|Contenir les objets métiers					|
+-----------------------------------------------------------------
+
+->  Notre entité du model est modélisée, et @Entity est l’annotation obligatoire !
+->  La communication aux données s’effectue via une classe annotée @Repository.
+->  La classe annotée @Service se charge des traitements métiers.
+->  Nos controllers @RestController nous permettent de définir des URL et le code à exécuter quand ces dernières sont requêtées.
